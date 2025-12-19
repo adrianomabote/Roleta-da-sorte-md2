@@ -1,0 +1,17 @@
+/* Custom styles */
+body { margin: 0; padding: 0; }
+.builder-container { width: 100%; }
+.rocketp-section { padding: 40px 20px; }
+.margin-padding-container { margin: 0; padding: 0; }
+.expand { width: 100%; }
+.expand-div { width: 100%; }
+.is-flex { display: flex; }
+.is-flex-wrap-wrap { flex-wrap: wrap; }
+.is-justify-content-space-between { justify-content: space-between; }
+.is-justify-content-flex-start { justify-content: flex-start; }
+.is-align-content-start { align-content: flex-start; }
+.is-align-items-start { align-items: flex-start; }
+.title-builder-element { font-size: 2rem; font-weight: 700; }
+.text-builder-element-icon-styles { line-height: 1.5; }
+.ql-editor { outline: none; }
+p { margin: 1rem 0; }
