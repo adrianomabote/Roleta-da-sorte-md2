@@ -1,16 +1,11 @@
-#!/usr/bin/env python3
 import http.server
-import socketserver
 import os
 
-PORT = 5000
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+os.chdir('/home/runner/workspace')
 
 class Handler(http.server.SimpleHTTPRequestHandler):
     def end_headers(self):
         self.send_header('Cache-Control', 'no-cache, no-store, must-revalidate')
         super().end_headers()
 
-with socketserver.TCPServer(("0.0.0.0", PORT), Handler) as httpd:
-    print(f"Server running at http://0.0.0.0:{PORT}/")
-    httpd.serve_forever()
+http.server.HTTPServer(('0.0.0.0', 5000), Handler).serve_forever()

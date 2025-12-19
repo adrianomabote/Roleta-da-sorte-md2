@@ -22,13 +22,13 @@ args = "Free Bet Website"
 name = "Free Bet Website"
 author = "agent"
 
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "python3 /home/runner/workspace/run.py"
-waitForPort = 5000
-
 [workflows.workflow.metadata]
 outputType = "webview"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python3 /home/runner/workspace/server.py"
+waitForPort = 5000
 
 [[ports]]
 localPort = 5000
